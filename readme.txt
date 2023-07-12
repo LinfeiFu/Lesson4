@@ -1,2 +1,3 @@
-//git add readme.txt
+//git add .
 //git commit
+//hello world
