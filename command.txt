@@ -1,0 +1,48 @@
+git init
+git clone (拉远程的库)
+git remote add origin repo_link (链接远程git repo)
+git add .(把当前所有文件添加到staging)
+git commit -m 'xxx' (message交代是做什么的)
+git push origin main/master branchName
+git branch (show本地所有branch)
+git checkout -b branchName(创建并切换到新的branch)
+git checkout -newBranch 
+git status (告诉当前所有文档状态信息)
+git log(commit过的版本信息)
+git commit --amend(修改之前的commit message)
+git rebase -i HEAD~2(合并多条commit message，让commit log变得更加简洁)
+
+git diff (对比本地文件变化)
+git diff --staged(对比staged状态 add之后)
+git restore (把staged状态的文件放到local)1
+
+restore只能在local和staged状态运用，commit后需要用reset
+local状态下restore就是丢弃了
+
+git reset --soft(hard) commitid(commit状态重制到指定的commit id，等于撤销)
+git push origin branch
+git reset --soft commitid(还未remote到远程的commit)
+git reset --hard commitid(已经发布的commit)
+git push origin branch -f
+
+git merge
+git merge --squash (把所有old commits merge成一个new commit)
+
+退出：esc+:wq
+
+Shell
+.(当前)
+..（上级）
+ls（列出当前目录所有文件夹）
+cd (进入一个文件夹)
+rm (删除remove文件)
+rm (-r) (删除目录)
+open . (打开当前文件夹)
+cp x newFile（copy文件到新的目录）
+mkdir （新建目录）
+cd.. (回退上级)
+touch filename（创建一个文件）
+cat （输出文件内容）
+echo（console.log）
+echo 'string'>filename (把新的string添加并替代file的内容)
+echo 'string' >>filename (把新的string添加但不覆盖file的内容)
